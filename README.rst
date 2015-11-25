@@ -21,6 +21,18 @@ Generate a Python package project::
 
     cookiecutter https://github.com/ardydedase/cookiecutter-pypackage.git
 
+About the package `requirements`::
+
+* Install the dev requirements in your local machine by running:
+    
+    pip install requirements/dev.txt
+
+* Requirements for Unit testing (on Travis) can be found in `requirements/test.txt`
+
+* Requirements for Prod build can be found in `requirements/prod.txt`
+
+* Prod requirements are reused in both Dev and Test requirementst.
+
 Then:
 
 * Create a repo and put it there.
