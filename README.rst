@@ -21,9 +21,9 @@ Generate a Python package project::
 
     cookiecutter https://github.com/ardydedase/cookiecutter-pypackage.git
 
-About the package `requirements`::
+About the package `requirements`:
 
-* Install the dev requirements in your local machine by running:
+* Install the dev requirements in your local machine by running::
     
     pip install requirements/dev.txt
 
