@@ -10,10 +10,10 @@ Tests for `{{ cookiecutter.project_slug }}` module.
 
 import unittest
 
-from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+from {{cookiecutter.project_slug}} import {{(cookiecutter.project_slug.title()).replace('_', '')}}
 
 
-class Test{{ cookiecutter.project_slug|capitalize }}(unittest.TestCase):
+class Test{{cookiecutter.project_slug | capitalize}}(unittest.TestCase):
 
     def setUp(self):
         pass
