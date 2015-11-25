@@ -25,7 +25,7 @@ About the package ``requirements``:
 
 * Install the dev requirements in your local machine by running::
     
-    pip install requirements/dev.txt
+    pip install -r requirements/dev.txt
 
 * Requirements for Unit testing (on Travis) can be found in ``requirements/test.txt``
 
