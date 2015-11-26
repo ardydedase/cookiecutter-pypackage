@@ -5,6 +5,22 @@ cookiecutter-pypackage
 .. image:: https://img.shields.io/travis/audreyr/cookiecutter-pypackage.svg
    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
 
+
+This was forked from: https://github.com/audreyr/cookiecutter-pypackage. Here are the differences of this forked version:
+
+* Required packages are not hardcoded in the ``setup.py`` file. All the required packages are inside the ``requirements`` folder.
+
+* Package requirements are broken down into separate files::
+
+.. code:: bash
+
+    ├── requirements
+    │   ├── dev.txt
+    │   ├── prod.txt
+    │   ├── test.txt
+
+* Creates a default class based on the package name.
+
 Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
 
 * Free software: BSD license
@@ -13,6 +29,7 @@ Cookiecutter template for a Python package. See https://github.com/audreyr/cooki
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion: Pre-configured version bumping with a single command
+
 
 Usage
 -----
