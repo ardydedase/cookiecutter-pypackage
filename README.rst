@@ -2,8 +2,8 @@
 cookiecutter-pypackage
 ======================
 
-.. image:: https://api.travis-ci.org/audreyr/cookiecutter-pypackage.svg?branch=master
-   :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
+.. image:: https://api.travis-ci.org/ardydedase/cookiecutter-pypackage.svg?branch=master
+   :target: https://travis-ci.org/ardydedase/cookiecutter-pypackage
 
 
 This was forked from: https://github.com/audreyr/cookiecutter-pypackage. Here are the differences of this forked version:
