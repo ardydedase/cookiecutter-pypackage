@@ -2,7 +2,7 @@
 cookiecutter-pypackage
 ======================
 
-.. image:: https://img.shields.io/travis/audreyr/cookiecutter-pypackage.svg
+.. image:: https://api.travis-ci.org/audreyr/cookiecutter-pypackage.svg?branch=master
    :target: https://travis-ci.org/audreyr/cookiecutter-pypackage
 
 
