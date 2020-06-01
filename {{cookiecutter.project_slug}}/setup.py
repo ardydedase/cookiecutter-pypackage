@@ -20,14 +20,15 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
+## workaround derived from: https://github.com/pypa/pip/issues/7645#issuecomment-578210649
 parsed_requirements = parse_requirements(
     'requirements/prod.txt',
-    session=pip.download.PipSession()
+    session='workaround'
 )
 
 parsed_test_requirements = parse_requirements(
     'requirements/test.txt',
-    session=pip.download.PipSession()
+    session='workaround'
 )
 
 
