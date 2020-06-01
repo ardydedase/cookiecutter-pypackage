@@ -20,14 +20,15 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
+## workaround derived from: https://github.com/pypa/pip/issues/7645#issuecomment-578210649
 parsed_requirements = parse_requirements(
     'requirements/prod.txt',
-    session=pip.download.PipSession()
+    session='workaround'
 )
 
 parsed_test_requirements = parse_requirements(
     'requirements/test.txt',
-    session=pip.download.PipSession()
+    session='workaround'
 )
 
 
@@ -58,12 +59,10 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     test_suite='tests',
     tests_require=test_requirements
